@@ -1,20 +1,15 @@
 package com.EjercicioAyudantia.ISoft.model;
 
-import lombok.Getter;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 
-@Getter
+@Data
+@AllArgsConstructor
 public class Tarea {
-    Long id;
-    String titulo;
-    String prioridad;
+
+    final Long id;
+    final String titulo;
+    final String prioridad;
     String fechaLimite;
     boolean completada;
-
-    public Tarea(Long id, String titulo, String prioridad, String fechaLimite,boolean completada){
-        this.id = id;
-        this.titulo = titulo;
-        this.prioridad = prioridad;
-        this.fechaLimite = fechaLimite;
-        this.completada = completada;
-    }
 }

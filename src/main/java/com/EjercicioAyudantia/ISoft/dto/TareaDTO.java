@@ -1,10 +1,9 @@
 package com.EjercicioAyudantia.ISoft.dto;
 
-import lombok.Getter;
-import lombok.Setter;
-
-@Getter
-@Setter
+import lombok.AllArgsConstructor;
+import lombok.Data;
+@Data
+@AllArgsConstructor
 public class TareaDTO {
     String titulo;
     String prioridad;
